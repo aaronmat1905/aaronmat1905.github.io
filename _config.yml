@@ -1,0 +1,6 @@
+title: "Aaron Thomas"
+description: "Portfolio"
+theme: minima
+
+header_pages:
+  - about.md
