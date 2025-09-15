@@ -1,8 +1,8 @@
 title: "Aaron Thomas"
 description: "Portfolio"
-url: "https://aaronmat1905.github.io"
+url: "https://aaronthomas.github.io"
 baseurl: ""
-theme: jekyll-theme-modernist
+theme: minima
 
 header_pages:
   - about.md
