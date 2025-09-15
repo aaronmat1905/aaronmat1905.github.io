@@ -1,6 +1,10 @@
 title: "Aaron Thomas"
 description: "Portfolio"
-theme: minima
+url: "https://aaronmat1905.github.io"
+baseurl: ""
+theme: Awesome Jekyll Theme
 
 header_pages:
   - about.md
+
+
