@@ -2,7 +2,7 @@ title: "Aaron Thomas"
 description: "Portfolio"
 url: "https://aaronmat1905.github.io"
 baseurl: ""
-theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
 
 header_pages:
   - about.md
