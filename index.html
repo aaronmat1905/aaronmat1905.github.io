@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AaronTM | Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'rgb(var(--bg-background) / <alpha-value>)',
+              surface: 'rgb(var(--bg-surface) / <alpha-value>)',
+              surfaceHighlight: 'rgb(var(--bg-surface-highlight) / <alpha-value>)',
+              border: 'rgb(var(--border-color) / <alpha-value>)',
+              primary: 'rgb(var(--text-primary) / <alpha-value>)',
+              secondary: 'rgb(var(--text-secondary) / <alpha-value>)',
+              accent: 'rgb(var(--accent-color) / <alpha-value>)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+              display: ['Archivo Black', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Default Dark Mode (Zinc) */
+        --bg-background: 9 9 11;       /* #09090b */
+        --bg-surface: 24 24 27;        /* #18181b */
+        --bg-surface-highlight: 39 39 42; /* #27272a */
+        --border-color: 39 39 42;      /* #27272a */
+        --text-primary: 228 228 231;   /* #e4e4e7 */
+        --text-secondary: 161 161 170; /* #a1a1aa */
+        --accent-color: 59 130 246;    /* #3b82f6 */
+      }
+
+      .light {
+        /* Light Mode (Zinc/Slate) */
+        --bg-background: 244 244 245;  /* #f4f4f5 */
+        --bg-surface: 255 255 255;     /* #ffffff */
+        --bg-surface-highlight: 228 228 231; /* #e4e4e7 */
+        --border-color: 212 212 216;   /* #d4d4d8 */
+        --text-primary: 24 24 27;      /* #18181b */
+        --text-secondary: 82 82 91;    /* #52525b */
+        --accent-color: 37 99 235;     /* #2563eb */
+      }
+
+      body {
+        font-family: 'Lora', serif;
+        background-color: rgb(var(--bg-background));
+        color: rgb(var(--text-primary));
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      /* Tech Dot Pattern Background */
+      .bg-dot-pattern {
+        background-image: radial-gradient(rgb(var(--border-color)) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+      
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

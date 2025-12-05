@@ -1,8 +1,0 @@
-title: "Aaron Thomas"
-description: "Portfolio"
-url: "https://aaronthomas.github.io"
-baseurl: ""
-theme: minima
-
-header_pages:
-  - about.md
