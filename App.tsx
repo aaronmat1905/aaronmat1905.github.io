@@ -64,9 +64,9 @@ const App: React.FC = () => {
     const loadData = async () => {
       try {
         const [profileRes, socialsRes, navRes] = await Promise.all([
-          fetch('./data/profile.json'),
-          fetch('./data/socials.json'),
-          fetch('./data/navigation.json')
+          fetch('./public/data/profile.json'),
+          fetch('./public/data/socials.json'),
+          fetch('./public/data/navigation.json')
         ]);
 
         if (!profileRes.ok) throw new Error(`Failed to load profile.json: ${profileRes.statusText}`);
